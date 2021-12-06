@@ -1,0 +1,67 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    &__number {
+        padding: 2px;
+        list-style: none;
+        border : 1px solid #000;
+        & ~ li {
+            margin-left: 5px;
+        }
+    }
+}
+.active {
+    color : red
+}
+.slide {
+    overflow: hidden;
+    &__container {
+        // width: 2500px;
+        transition: all .1s;
+        display: flex;
+        position: relative;
+    }
+    &__prev__btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        border: none;
+        background: transparent;
+    }
+    &__next__btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        border: none;
+        background: transparent;  
+    }
+}
+.page__number {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    > li {
+        list-style: none;
+        border: 1px solid #000;
+        padding: 2px;
+        cursor: pointer;
+        ~ li {
+            margin-left: 5px;
+        }
+    }
+}
+.button__group {
+    margin-left: 5px;
+    button {
+        border: 1px solid #000;
+        padding: 3px;
+        ~ button{
+            margin-left: 5px;
+        }
+    }
+}

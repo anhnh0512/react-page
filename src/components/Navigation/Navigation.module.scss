@@ -1,0 +1,33 @@
+.side__bar {
+    border:1px solid #99ebff;
+
+    &__item {
+        
+        display: flex;
+        margin-bottom: 10px;
+        img {
+            width: 100px;
+        }
+    }
+    &__title {
+        background:  #99ebff;
+        span {
+            margin-top: 2px;
+            color: #ffff80;
+            margin-left: 10px;
+        }
+        h1 {
+            margin-left: 10px;
+            text-transform: uppercase;
+            color: #fff;
+            display: flex;
+        }
+    }
+    &__content {
+        padding: 10px;
+    }
+    &__link {
+        color : #33adff;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,25 @@
+.button {
+    width: 300px;
+    padding : 12px 0 12px 0;
+    color:#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f0f5f5;
+    background: #fff;
+    transition: all .1s;
+    cursor: pointer;
+    border-radius : 30px;
+    ~ button {
+        margin-top: 10px;
+    }
+}
+.active:hover {
+    background:#f0f5f5;
+}
+.lightBlue {
+    background: #94e9f3;
+}
+.none {
+    border:none !important;
+}

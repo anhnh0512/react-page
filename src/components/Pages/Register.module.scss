@@ -1,0 +1,100 @@
+.Register__wrapper {
+    background: url('https://tiennghich.mobi/hinh-nen-dong-anime-cho-may-tinh/imager_8659.jpg');
+    position: relative;
+    height: 100vh;
+    .Register__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        background: #fff;
+        border-radius: 30px;
+        .Register__title {
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 1.4;
+            // color: #292929
+        }
+        .Register__form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .form__control {
+                .form__label {
+                    text-indent: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    .form__inputLabel {
+                        font-size: 1rem;
+                        margin-bottom: 10px;
+                    }
+                    .form__labelRight {
+                        cursor: pointer;
+                    }
+                }
+                 ~ .form__control{
+                    margin-top: 10px;
+                }
+                .form__input {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        width: 300px;
+                        // height: ;
+                        padding: 12px 20px;
+                        border-radius: 30px;
+                        border:1px solid  #a3c2c2;
+                        background: #ebebe0;
+                        outline: none;
+                        ~ input {
+                            margin-top: 10px;
+                        }
+                    }
+                    .form__btnRight {
+                        position: absolute;
+                        top: 0;
+                        right : 0;
+                        height: 100%;
+                        background: #ccccb3;
+                        border-radius: 30px;
+                        width: 25%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        transition: all .1s;
+                        &:hover {
+                            background:  #999966;
+                        }
+                    }
+                }
+                .form__button {
+                    button{
+                        &:hover {
+                            background: #4dffff;
+                            transition: background .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Register__haveAcc {
+        margin-top: 10px;
+        font-size: 1.1rem;
+        text-align: center;
+        .Register__link {
+            color : #ff6600;
+        }
+    }
+}

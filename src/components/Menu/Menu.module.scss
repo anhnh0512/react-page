@@ -1,0 +1,26 @@
+.side__bar {
+    &__menu {
+        &:first-child {
+            margin-top: 9px;
+        }
+        li {
+            align-items: center;
+            display: flex;
+            text-transform: uppercase;
+            color: #000;
+            background: #e0ebeb;
+            padding-bottom: 1px;
+            ~ li {
+                margin-top: 3px;
+                // height: 30px;
+            }
+        }
+        .menu__link {
+            text-indent: 47px;
+            // margin-left: 45px;
+        }
+        .menu__icon {
+            display: inline-block;
+        }
+    }
+}
